@@ -233,12 +233,12 @@ def knn_classifier():
 
     st.write("Para avaliar a acurácia dos métodos de clusterização, é selecionada uma porcentagem de dados para treinamento e o restante para teste (80:20).")
 
-    st.image(r'Imagens/15_cross-validation.png', use_column_width=False, width=600)
+    st.image(r'Estatística/IrisData/Desenvolvimento/webAppIris/Imagens/15_cross-validation.png', use_column_width=False, width=600)
 
 
     st.write("Seleciona-se a partir de uma clusterização 80% dos pontos divididos em 4 folders, tendo 20% em cada um. A partir disso, sorteia ou seleciona algum ponto (de preferência pontos críticos ou muito distante dos clusters), calcula a distância entre ele e K pontos rotulados (clusterizados) próximos a ele. Então, rotula este ponto em função da distância e da quantidade de pontos próximos a ele, e depois compara com o rótulo do ajuste. Em sequência, seleciona outro folder para teste e retém os outros para treinamento, mantendo este ciclo até que tenha sido considerado os 5 folders como treino.")
 
-    st.image(r'Imagens/16_knn.png', use_column_width=False, width=500)
+    st.image(r'Estatística/IrisData/Desenvolvimento/webAppIris/Imagens/16_knn.png', use_column_width=False, width=500)
     
     st.write("A fim de se avaliar os dados, é possível utilizar previsões, possuindo as informações reais da classificação, do que é esperado ou não, e calcular essas previsões. Por exemplo, caso uma espécime tenha sido classificada como virginica, mas esperava-se setosa (pressupõe o dado real para avaliação), então há um desvio de resultado no modelo, estando aberto a correções e ajustes.")
     
