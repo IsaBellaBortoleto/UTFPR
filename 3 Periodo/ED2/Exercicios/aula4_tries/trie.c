@@ -92,21 +92,24 @@ void delete (Trie *root, char *word) {
 	printf("\nImplementar a remocao\n");
 	if(search_auxiliary(root, word))
 	{
-		Trie *t= root;
-		for(int i= 0;word[i]!='\0';i++)//n>1(n-numero de filhos) e não é fim ou n>0 eh fim
-					       //free(aux->filhos(aux))
+		Trie *aux= root;
+		/*for(int i= 0;word[i]!='\0';i++)//n>1(n-numero de filhos) e não é fim ou n>0 eh fim
+		       //free(aux->filhos(aux))
 		{
-			/*int index=word[i]-'a';
+			*int index=word[i]-'a';
 			if(t->keys[index]==NULL)//se nao houver mais de uma chave
 						//para de pegar o indice e no
 				t->nchild+=1;
 			t=t->keys[index];
 			if(t->end)
 				t[keys] = free_node;//libera ate o no*/
-			if((nchild>1)&&(nao eh fim))
-			if else ((nchild>0)&&(nao eh fim))
+			if((nchild>1)&&!(aux->end))
+			if else ((nchild>0)&&(aux->end))
 		}
-
+	free(aux->filhos(aux));
+	
+	else
+		printf("Essa chave nao existe\n");
 
 	}
 	else//faça nada
